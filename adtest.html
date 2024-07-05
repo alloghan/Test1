@@ -1,72 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Ad test</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Various Sized Divs with Different Backgrounds</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .ad-box {
+        margin-bottom: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .red {
+        width: 468px;
+        height: 60px;
+        background-color: red;
+    }
+
+    .blue {
+        width: 300px;
+        height: 250px;
+        background-color: blue;
+    }
+
+    .black {
+        width: 320px;
+        height: 50px;
+        background-color: black;
+		color: white;
+    }
+
+    .green {
+        width: 160px;
+        height: 300px;
+        background-color: green;
+    }
+
+    .yellow {
+        width: 160px;
+        height: 600px;
+        background-color: yellow;
+    }
+
+    .brown {
+        width: 728px;
+        height: 90px;
+        background-color: brown;
+    }
+
+    .dimension {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-aside {
+        margin-right: 20px;
+    }
+
+    .right-aside {
+        margin-left: 20px;
+    }
+</style>
 </head>
 <body>
-<!--
-<p>Popunder</p>
-<script type='text/javascript' src='//pl23677985.highrevenuenetwork.com/44/41/e8/4441e8e9872dea6b60f0148be87b8d6f.js'></script>
--->
-
-<br><br>
-<p>Banner 468x60</p>
-<script async="async" data-cfasync="false" src="//pl23673125.highrevenuenetwork.com/122c15185499cda0eed5a493ea4f2b42/invoke.js"></script>
-<div id="container-122c15185499cda0eed5a493ea4f2b42"></div>
-
-<!--
-<br><br>
-<p>Banner 300x250</p>
--->
-
-<br><br>
-<p>Banner 320x50</p>
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'ea98f74a42b2c0850139527b8732180c',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/ea98f74a42b2c0850139527b8732180c/invoke.js"></script>
-
-
-<br><br>
-<p>Native Banner</p>
-<script async="async" data-cfasync="false" src="//pl23673125.highrevenuenetwork.com/122c15185499cda0eed5a493ea4f2b42/invoke.js"></script>
-<div id="container-122c15185499cda0eed5a493ea4f2b42"></div>
-
-<!--
-<br><br>
-<p>Banner 160x300</p>
--->
-<!--
-<br><br>
-<p>Banner 160x600</p>
--->
-
-<br><br>
-<p>Banner 728x90</p>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '4cd1efb0e549e833e89ad217eeda8201',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/4cd1efb0e549e833e89ad217eeda8201/invoke.js"></script>
-
-<!--
-<br><br>
-<p>Social Bar</p>
--->
-
-
+    <aside class="left-aside">
+        <div class="ad-box green">
+            <div class="dimension">160x300</div>
+        </div>
+    </aside>
+    <div class="center-container">
+        <div class="ad-box red">
+            <div class="dimension">468x60</div>
+        </div>
+        <div class="ad-box blue">
+            <div class="dimension">300x250</div>
+        </div>
+        <div class="ad-box black">
+            <div class="dimension">320x50</div>
+        </div>
+        <div class="ad-box brown">
+            <div class="dimension">728x90</div>
+        </div>
+    </div>
+    <aside class="right-aside">
+        <div class="ad-box yellow">
+            <div class="dimension">160x600</div>
+        </div>
+    </aside>
 </body>
 </html>
